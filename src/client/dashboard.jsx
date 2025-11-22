@@ -140,6 +140,11 @@ export default function Dashboard() {
 
   return (
     <div className="dashboard">
+      {/* Welcome Widget */}
+      <div className="welcome-widget">
+        <h1 className="welcome-title">Welcome to my channel</h1>
+      </div>
+      
       <h1 className="dashboard-title">Cyber Risk Intelligence Dashboard</h1>
       
       {error && <div className="error">{error}</div>}

@@ -6,6 +6,27 @@
   min-height: 100vh;
 }
 
+.welcome-widget {
+  background: linear-gradient(135deg, #001f3f 0%, #003d7a 50%, #1e5a96 100%);
+  border-radius: 12px;
+  padding: 40px 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 20px rgba(0, 31, 63, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 120px;
+}
+
+.welcome-title {
+  font-size: 36px;
+  font-weight: 600;
+  color: white;
+  margin: 0;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
 .dashboard-title {
   font-size: 32px;
   font-weight: 600;
