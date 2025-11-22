@@ -7,6 +7,7 @@ import SecurityIncidentsBySeverity from './components/SecurityIncidentsBySeverit
 import DrillDownPanel from './components/DrillDownPanel.jsx';
 import './dashboard.css';
 
+// Main Dashboard component for displaying cyber risk intelligence
 export default function Dashboard() {
   const service = useMemo(() => new DashboardService(), []);
   const [data, setData] = useState({
@@ -29,7 +30,7 @@ export default function Dashboard() {
   const [selectedVulnerability, setSelectedVulnerability] = useState(null);
   const [drillDownOpen, setDrillDownOpen] = useState(false);
 
-  // Load all data
+  // Load all data from ServiceNow
   useEffect(() => {
     async function loadDashboardData() {
       try {
