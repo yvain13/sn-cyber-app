@@ -1,0 +1,6 @@
+{
+  "scope": "x_1433234_cyber_ri",
+  "scopeId": "d48bc1bac35132109a1b784ed4013145",
+  "name": "Cyber Risk I",
+  "tsconfigPath": "./src/server/tsconfig.json"
+}
