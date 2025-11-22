@@ -1,7 +1,7 @@
 import '@servicenow/sdk/global'
 import { Record } from '@servicenow/sdk/core'
 
-// M2M Relationships between Vulnerabilities and Risk Controls
+// M2M Relationships between Vulnerabilities and Risk Control
 export const sampleVulnerabilityRiskControlMappings = [
   // SQL Injection -> Input Validation + Secure Coding
   Record({
