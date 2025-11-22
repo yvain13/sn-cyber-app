@@ -144,6 +144,7 @@ export default function Dashboard() {
       {/* Welcome Widget */}
       <div className="welcome-widget">
         <h1 className="welcome-title">Welcome to my channel</h1>
+        <p className="welcome-subtitle">ServiceNow/AI Enthusiasts</p>
       </div>
       
       <h1 className="dashboard-title">Cyber Risk Intelligence Dashboard</h1>
