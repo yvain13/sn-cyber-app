@@ -80,7 +80,7 @@ export class DashboardService {
         }
       }
 
-      // Get related security incidents
+      // Get related security incidents new
       const incidents = await this.getData('x_1433234_cyber_ri_security_incident', {
         sysparm_query: `related_vulnerability=${vulnerabilityId}`
       });
