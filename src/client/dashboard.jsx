@@ -7,7 +7,6 @@ import SecurityIncidentsBySeverity from './components/SecurityIncidentsBySeverit
 import DrillDownPanel from './components/DrillDownPanel.jsx';
 import './dashboard.css';
 
-// Main Dashboard component for displaying cyber risk intelligence
 export default function Dashboard() {
   const service = useMemo(() => new DashboardService(), []);
   const [data, setData] = useState({
@@ -30,7 +29,7 @@ export default function Dashboard() {
   const [selectedVulnerability, setSelectedVulnerability] = useState(null);
   const [drillDownOpen, setDrillDownOpen] = useState(false);
 
-  // Load all data from ServiceNow
+  // Load all data
   useEffect(() => {
     async function loadDashboardData() {
       try {
@@ -141,10 +140,16 @@ export default function Dashboard() {
 
   return (
     <div className="dashboard">
-      {/* Welcome Widget */}
-      <div className="welcome-widget">
-        <h1 className="welcome-title">Welcome to my channel</h1>
-        <p className="welcome-subtitle">ServiceNow/AI Enthusiasts</p>
+      {/* Header Section with Image and Welcome Message */}
+      <div className="dashboard-header">
+        <div className="header-image-container">
+          <img src="polaris-banner-agnostic-portal-opportunity-banner.svg" alt="Polaris Banner" className="header-banner-image" />
+        </div>
+        
+        {/* Welcome Widget */}
+        <div className="welcome-widget">
+          <h1 className="welcome-title">Welcome to my channel</h1>
+        </div>
       </div>
       
       <h1 className="dashboard-title">Cyber Risk Intelligence Dashboard</h1>
